@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/navHeaderIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="Navigation Icon"
+        app:srcCompat="@drawable/baseline_verified_user_24" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello User 'Thabiso'" />
+</LinearLayout>

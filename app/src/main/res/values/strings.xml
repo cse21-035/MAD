@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">QuickUtility</string>
+    <string name="add_event" />
+    <string name="action_settings" />
+    <string name="menu_home" />
+    <string name="open_drawer">Open Navigation Drawer</string>
+    <string name="close_drawer">Close Navigation Drawer</string>
+
+
+    <string-array name="font_options">
+        <item>Font 1</item>
+        <item>Font 2</item>
+    </string-array>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+</resources>

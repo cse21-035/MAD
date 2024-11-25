@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme (Material3 DayNight NoActionBar) -->
+    <style name="Base.Theme.QuickUtility" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <!-- Light theme using Material3 (No ActionBar) -->
+    <style name="Theme.QuickUtility" parent="Base.Theme.QuickUtility">
+        <!-- Customize your light theme here -->
+    </style>
+
+    <!-- Dark theme using Material3 (No ActionBar) -->
+    <style name="Theme.QuickUtility.Dark" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here -->
+    </style>
+
+    <style name="ThemeOverlay.QuickUtility.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
+</resources>
