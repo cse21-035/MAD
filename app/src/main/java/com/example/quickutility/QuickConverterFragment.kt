@@ -33,7 +33,7 @@ class QuickConverterFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.quick_convetor, container, false)
+        return inflater.inflate(R.layout.fragment_quick_convetor, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -150,6 +150,12 @@ class QuickConverterFragment : Fragment() {
                     fromUnit == "Kilometer" && toUnit == "Meter" -> value * 1000
                     fromUnit == "Centimeter" && toUnit == "Meter" -> value / 100
                     fromUnit == "Meter" && toUnit == "Centimeter" -> value * 100
+                    fromUnit == "Millimeter" && toUnit == "Meter" -> value / 1000
+                    fromUnit == "Meter" && toUnit == "Millimeter" -> value * 1000
+                    fromUnit == "Kilometer" && toUnit == "Centimeter" -> value * 100000
+                    fromUnit == "Centimeter" && toUnit == "Kilometer" -> value / 100000
+                    fromUnit == "Kilometer" && toUnit == "Millimeter" -> value * 1000000
+                    fromUnit == "Millimeter" && toUnit == "Kilometer" -> value / 1000000
                     else -> value // Other conversions can be added here
                 }
             }
@@ -157,6 +163,10 @@ class QuickConverterFragment : Fragment() {
                 result = when {
                     fromUnit == "Kilogram" && toUnit == "Pound" -> value * 2.20462
                     fromUnit == "Pound" && toUnit == "Kilogram" -> value / 2.20462
+                    fromUnit == "Kilogram" && toUnit == "Gram" -> value * 1000
+                    fromUnit == "Gram" && toUnit == "Kilogram" -> value / 1000
+                    fromUnit == "Pound" && toUnit == "Gram" -> value * 453.592
+                    fromUnit == "Gram" && toUnit == "Pound" -> value / 453.592
                     else -> value // Other conversions can be added here
                 }
             }
@@ -164,6 +174,10 @@ class QuickConverterFragment : Fragment() {
                 result = when {
                     fromUnit == "Celsius" && toUnit == "Fahrenheit" -> (value * 9/5) + 32
                     fromUnit == "Fahrenheit" && toUnit == "Celsius" -> (value - 32) * 5/9
+                    fromUnit == "Celsius" && toUnit == "Kelvin" -> value + 273.15
+                    fromUnit == "Kelvin" && toUnit == "Celsius" -> value - 273.15
+                    fromUnit == "Fahrenheit" && toUnit == "Kelvin" -> (value - 32) * 5/9 + 273.15
+                    fromUnit == "Kelvin" && toUnit == "Fahrenheit" -> (value - 273.15) * 9/5 + 32
                     else -> value // Other conversions can be added here
                 }
             }
