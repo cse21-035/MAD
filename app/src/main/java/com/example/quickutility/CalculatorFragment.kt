@@ -57,10 +57,14 @@ class CalculatorFragment : Fragment() {
         binding.btnDivision.setOnClickListener { setOperator("/", tvOutput) }
 
         // Equal button
-        binding.btnEquals.setOnClickListener { calculateResult(tvOutput) }
+        binding.btnEquals.setOnClickListener {
+            calculateResult(tvOutput)
+        }
 
         // Clear button
-        binding.btnClear.setOnClickListener { clear(tvOutput) }
+        binding.btnClear.setOnClickListener {
+            clear(tvOutput)
+        }
 
         // Home button
         binding.btnHome3.setOnClickListener {
